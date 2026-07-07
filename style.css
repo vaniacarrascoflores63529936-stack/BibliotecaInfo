@@ -1013,3 +1013,139 @@ footer {
 .mb-2 {
     margin-bottom: 2rem;
 }
+/* ============================================
+   CSS ADICIONAL - QR WHATSAPP
+   ============================================ */
+
+/* ===== QR WHATSAPP CARD ===== */
+.contact-qr-whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--blanco);
+    border-radius: 28px;
+    padding: 2.5rem 2rem;
+    box-shadow: var(--shadow-xl);
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid var(--gris-borde);
+}
+
+.contact-qr-whatsapp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -10px rgba(37, 211, 102, 0.15);
+}
+
+.contact-qr-whatsapp .qr-icon {
+    font-size: 3.5rem;
+    color: #25D366;
+    margin-bottom: 0.5rem;
+}
+
+.contact-qr-whatsapp .qr-icon i {
+    background: rgba(37, 211, 102, 0.1);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.contact-qr-whatsapp h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--gris-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+.contact-qr-whatsapp > p {
+    font-size: 0.9rem;
+    color: var(--gris-medio);
+    margin-bottom: 1.2rem;
+}
+
+.contact-qr-whatsapp .qr-image-container {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 2px dashed #e5e7eb;
+    transition: var(--transition);
+}
+
+.contact-qr-whatsapp .qr-image-container:hover {
+    border-color: #25D366;
+}
+
+.contact-qr-whatsapp .qr-image-container img {
+    max-width: 180px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.contact-qr-whatsapp .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #25D366;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    margin: 0.5rem 0;
+}
+
+.contact-qr-whatsapp .whatsapp-link:hover {
+    background: #1da851;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+}
+
+.contact-qr-whatsapp .whatsapp-link i {
+    font-size: 1.4rem;
+}
+
+.contact-qr-whatsapp .qr-note {
+    font-size: 0.75rem;
+    color: var(--gris-medio);
+    margin-top: 0.8rem;
+}
+
+.contact-qr-whatsapp .qr-note i {
+    color: var(--naranja-intenso);
+}
+
+/* ===== RESPONSIVE QR WHATSAPP ===== */
+@media (max-width: 768px) {
+    .contact-qr-whatsapp {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-qr-whatsapp .qr-image-container img {
+        max-width: 150px;
+    }
+    
+    .contact-qr-whatsapp .qr-icon {
+        font-size: 2.8rem;
+    }
+    
+    .contact-qr-whatsapp h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-qr-whatsapp .whatsapp-link {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-qr-whatsapp .qr-image-container img {
+        max-width: 120px;
+    }
+    
+    .contact-qr-whatsapp {
+        padding: 1.5rem 1rem;
+    }
+}
